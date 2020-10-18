@@ -4,9 +4,9 @@ on:
     branches:
       - main
 jobs:
-  check-bats-version:
+  create-file:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - run: npm -v
+      - run: touch test2.txt
